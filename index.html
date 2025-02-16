@@ -196,15 +196,34 @@
         var authorText = document.getElementsByClassName("authorName")[0];
         var idText = document.getElementsByClassName("id")[0];
         
+        var allLevels = [, , ]
 
-        var allLevels = ["Hewenty Erebus", "cCc spam 2p", "Alternate Anthony","Alternating Andy", "tapw","gizmo gulCh",
-        "deCode ship and wave", "DeLode", "Whitpoop Challenge","coopl3x 2p chall","Batle Never Clear", "Birthday Challenge"]
+        var authors = [, ,]
+        var ids = [, , ];
+        var allVids = [""];
 
-        var authors = ["Conski","Skello" ,"GDBatle1", "ATF","RQD","jackmeup","motor8","motor8","Whizkid05","GDBatle1",
-        "Motor8", "Motor8"]
-        var ids = [104135199, 107478992, 107477760, 92236172, 96202919, 54581890, 78722679, 89250897, 92753944, 85977445,82115167
-        ,96145333]
-        var allVids = [""]
+
+        function placeLevel(name,author,id,vid,placement){
+            allLevels[placement-1] = name;
+            authors[placement-1] = author;
+            ids[placement-1] = id;
+            allVids[placement-1] = vid;
+        }
+        placeLevel("Tax Evasion Wave","Jasp & LiNDa",2000,"-dDaHiBiVoc",1)
+        placeLevel("Hewenty Erebus","Boldstep, conski",104135199,"",2)
+        placeLevel("The Forbidden Meat","Motor8, gBen",110860127,"",3)
+        placeLevel("2 player Fun","Vortrox ",115165485,"",4)
+        placeLevel("gizmo gulCh","jackmeup",54581890,"",5)
+        placeLevel("Alternate Andy x3","Danzmen, ATF & Neuron",113130320,"",6)
+        placeLevel("very normal copilot","Xenbez7 & Ego11, Neuron",113333239,"",7)
+        placeLevel("Coexistance","Togel32",110633871,"",8)
+        placeLevel("Gae Spider","B1nARiC",108975131,"",9)
+        placeLevel("Batle Never Clear","Motor8 ",82115167,"",10)
+        placeLevel("wormchild challeng2","RanOutOfUsers ",112197602,"",11)
+        placeLevel("Alternate Andy","Danzmen, ATF",92236172,"",12)
+        placeLevel("Paradiddle ","Neigefeu ",70658422,"",13)
+        //placeLevel("","",,"",3)
+        //placeLevel("cCc spam 2p","Skello",107478992,"",3)
         idText.textContent = "ID: "+ ids[0];
         document.getElementById("video").src = ("https://www.youtube.com/embed/"+allVids[0])
     authorText.textContent = "By: "+authors[0]
